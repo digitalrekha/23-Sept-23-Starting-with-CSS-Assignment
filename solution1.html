@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution 1</title>
+    <link rel="stylesheet" href="solution1.css">
+
+    <!-- Question: 1 Create a simple page with some div tags and show different ways to add CSS as well as what happens when you target the same elements with inline, internal, and external CSS. Also, utilize comments in the project where required. -->
+
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            color: red;
+        }
+
+        p {
+            color: rgb(8, 17, 146)
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Inline css -->
+    <h1 style="color: orangered;">This is Main Heading</h1>
+    <div>
+        <p>This is paragraph</p>
+        <p>This is second paragraph</p>
+        <p>This is third paragraph</p>
+    </div>
+
+    <!-- Note: I have applied different style css on same element i.e h1, but we can see that the priority is given to inline element first. It means inline css given more importance as compared to both internal and extenal css.
+     inline > internal > external -->
+
+</body>
+
+</html>

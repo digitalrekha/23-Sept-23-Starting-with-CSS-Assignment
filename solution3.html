@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution 3</title>
+    <!-- 3. Develop an HTML form with various input elements. Use CSS to style the form, including setting background colors for input fields. Create a custom color palette for the form elements, and demonstrate how to apply opacity to one of the form sections. -->
+
+    <style>
+        .first-name {
+            background-color: aqua;
+            opacity: 0.5;
+            /* this is the way to apply opacity. */
+        }
+        .last-name{
+            background-color: blue;
+        }
+        .email{
+            background-color: brown;
+        }
+        .password{
+            background-color: rgb(81, 92, 70);
+        }
+        .confirm-password{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Form</h2>
+    <form action="post">
+        <div>
+            <label for="fname">First Name: </label>
+            <input class="first-name" type="text" id="fname" name="username" placeholder="First Name" required
+                minlength="3"><br><br>
+            <label for="lname">Last Name: </label>
+            <input class="last-name" type="text" id="lname" name="username" placeholder="Last Name" required
+                minlength="3"><br><br>
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input class="email" type="email" id="email" name="email" placeholder="Email" required minlength="3">
+        </div><br>
+        <div>
+            <label for="password">Password: </label>
+            <input class="password" type="password" id="Password" name="password" placeholder="******" required>
+        </div><br>
+        <div>
+            <label for="confirm password">Confirm Password: </label>
+            <input class="confirm-password" type="confirm password" id="confirm Password" name="confirm password" placeholder="******"
+                required>
+        </div><br>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required max="150" min="0" value="0" >
+        </div><br>
+        <div>
+            <label for="male">Male:</label>
+            <input type="radio" id="male" name="gender" required value="male" checked >
+            <label for="female">Female:</label>
+            <input type="radio" id="female" name="gender" required value="female">
+        </div><br>
+        <div><label for="terms">I agree to terms & conditions</label>
+            <input type="checkbox" id="terms" name="terms" checked>
+        </div><br>
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+
+</html>

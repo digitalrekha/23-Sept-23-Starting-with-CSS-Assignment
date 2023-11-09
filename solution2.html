@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution 2</title>
+    <!-- 2. Build an HTML page with multiple paragraphs, each assigned a unique class name. Write CSS rules using class selectors to apply distinct styling to each paragraph. Follow the BEM naming convention and explain how you've named the classes. -->
+    <style>
+        .box {
+            border: 2px solid black;
+            height: 50vh;
+            width: 70vw;
+            background-color: rgb(228, 191, 200);
+            padding-left: 10px;
+        }
+
+        .box_heading {
+            color: red;
+        }
+
+        .box_para {
+            color: blue;
+        }
+
+        .box_subheading {
+            color: rgb(25, 119, 39);
+        }
+
+        .box_subpara {
+            color: crimson;
+        }
+
+        .box_btn {
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2 class="box_heading">This is Main heading</h2>
+        <p class="box_para">This is Paragraph</p>
+        <h3 class="box_subheading">This is sub heading</h3>
+        <p class="box_subpara">This is sub paragraph</p>
+        <button class="box_btn">This is Button</button>
+    </div>
+</body>
+
+</html>
